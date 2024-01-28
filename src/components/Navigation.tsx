@@ -13,11 +13,12 @@ interface Props {
 }
 
 const Navigation = ({ onSubmit }: Props) => {
-  const navItems = ["Home", "Menu", "Order Online", "Location", "Contact Us"];
+  //   const navItems = ["Home", "Menu", "Order Online", "Location", "Contact Us"];
+  const navItems = ["Home", "Order Online", "Location", "Contact Us"];
 
   return (
     <>
-      <form className="container d-flex justify-content-between">
+      <form className="container d-flex justify-content-between  mt-4">
         {navItems.map((navItem) => (
           <a
             key={navItem}
