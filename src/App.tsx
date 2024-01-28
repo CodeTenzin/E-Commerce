@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 function App() {
   const siteName = "Kiki's Delivery Service";
   // const [clickedLink, setClickedLink] = useState("");
+  const [items, setItems] = useState<number[]>([]);
 
   const navSubmitHandler = (link: string) => {
     console.log("Clicked", link);
@@ -15,12 +16,14 @@ function App() {
 
   const addToCartHandler = (index: number) => {
     console.log("Clicked", index);
+    setItems([...items, index]);
+    console.log("Indexes", items);
   };
 
   return (
     <>
       <div className="container">
-        <Navigation onSubmit={navSubmitHandler} />
+        <Navigation items={items} onSubmit={navSubmitHandler} />
         <Hero />
         <Order onAdd={addToCartHandler} />
       </div>

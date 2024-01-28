@@ -26,7 +26,7 @@ const Order = ({ onAdd }: Props) => {
   ];
 
   const items = [
-    "Creampuff",
+    "Macaron",
     "Chocolate Cake",
     "Glazed Donut",
     "Creme Brulee",

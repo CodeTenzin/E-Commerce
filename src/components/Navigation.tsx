@@ -9,16 +9,17 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface Props {
+  items: number[];
   onSubmit: (link: string) => void;
 }
 
-const Navigation = ({ onSubmit }: Props) => {
+const Navigation = ({ items, onSubmit }: Props) => {
   //   const navItems = ["Home", "Menu", "Order Online", "Location", "Contact Us"];
   const navItems = ["Home", "Order Online", "Location", "Contact Us"];
 
   return (
     <>
-      <form className="container d-flex justify-content-between  mt-4">
+      <form className="container sticky d-flex justify-content-between  mt-4">
         {navItems.map((navItem) => (
           <a
             key={navItem}
@@ -31,7 +32,8 @@ const Navigation = ({ onSubmit }: Props) => {
         ))}
         <div>
           <button className="btn btn-outline-primary mx-2">
-            <FontAwesomeIcon icon={faCartPlus} />
+            <FontAwesomeIcon icon={faCartPlus} />{" "}
+            {items.length > 0 && items.length}
           </button>
           <button className="btn btn-outline-primary mx-2">
             <FontAwesomeIcon icon={faShareAlt} />
