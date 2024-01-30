@@ -8,11 +8,17 @@ import image7 from "../assets/image7.jpg";
 import image8 from "../assets/image8.jpg";
 import image9 from "../assets/image9.jpg";
 
+// Added
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "../state/store";
+import { increment, decrement } from "../state/NavigationSlice";
+
 interface Props {
+  goToId: string;
   onAdd: (index: number) => void;
 }
 
-const Order = ({ onAdd }: Props) => {
+const Order = ({ goToId, onAdd }: Props) => {
   const images = [
     image1,
     image2,
@@ -39,21 +45,28 @@ const Order = ({ onAdd }: Props) => {
 
   const prices = [5.49, 4.99, 3.99, 6.49, 3.49, 4.29, 3.49, 2.99, 2.99];
 
+  // Added
+  const dispatch = useDispatch<AppDispatch>();
+
   return (
     <>
-      <div className="text-center mt-5">
-        {/* <img width={100} height={150} src={image1} alt="" /> */}
+      <div id={goToId} className="text-center mt-5">
         <h2>Order</h2>
         <div className="row row-cols-3">
-          {/* <div class="col">Column</div> */}
           {images.map((image, index) => (
             <span key={index} className="col mt-5">
               <img className="menu-image" src={image} />
               <p>{items[index]}</p>
               <p>${prices[index]}</p>
-              <button
+              {/* <button
                 className="btn btn-outline-primary px-4"
                 onClick={() => onAdd(index)}
+              >
+                Add
+              </button> */}
+              <button
+                className="btn btn-outline-primary px-4"
+                onClick={() => dispatch(increment())}
               >
                 Add
               </button>

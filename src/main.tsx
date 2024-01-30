@@ -4,8 +4,14 @@ import App from "./App.tsx";
 // import './index.css'
 import "bootstrap/dist/css/bootstrap.css";
 
+// Added
+import { Provider } from "react-redux";
+import { store } from "./state/store.ts";
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
