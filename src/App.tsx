@@ -32,7 +32,8 @@ function App() {
 
   return (
     <>
-      <div className="container">
+      {/* <div className="container"> */}
+      <div className="container-fluid">
         {/* <Navigation items={items} onSubmit={navSubmitHandler} /> */}
         <Navigation items={cart} onSubmit={navSubmitHandler} />
         <Hero siteName={siteName} />

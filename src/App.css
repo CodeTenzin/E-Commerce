@@ -15,6 +15,10 @@
   top: 2rem;
 }
 
+.hero {
+  background: #e8e8e8;
+}
+
 /* .nav_logo {
     background: linear-gradient(45deg, #ff6b6b, #3a1c71);
     background: url("./assets/logo.png");

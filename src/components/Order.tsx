@@ -50,7 +50,7 @@ const Order = ({ goToId, onAdd }: Props) => {
 
   return (
     <>
-      <div id={goToId} className="text-center mt-5">
+      <div id={goToId} className="container text-center mt-5">
         <h2>Order</h2>
         <div className="row row-cols-3">
           {images.map((image, index) => (
