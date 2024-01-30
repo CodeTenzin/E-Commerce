@@ -7,12 +7,12 @@ import Hero from "./components/Hero";
 
 import { RootState } from "./state/store";
 import { useSelector } from "react-redux";
+import Cart from "./components/Cart";
 
 // TODO: href link to id.
 
 function App() {
-  const siteName = "Kiki's Delivery Service";
-  // const [clickedLink, setClickedLink] = useState("");
+  const siteName = "Insomnia Cafe";
   const [items, setItems] = useState<number[]>([]);
   const [goToId, setGoToId] = useState("");
 
@@ -35,8 +35,7 @@ function App() {
       <div className="container">
         {/* <Navigation items={items} onSubmit={navSubmitHandler} /> */}
         <Navigation items={cart} onSubmit={navSubmitHandler} />
-
-        <Hero />
+        <Hero siteName={siteName} />
         <Order goToId={goToId} onAdd={addToCartHandler} />
       </div>
     </>
