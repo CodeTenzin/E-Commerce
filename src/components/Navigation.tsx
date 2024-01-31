@@ -17,7 +17,7 @@ const Navigation = ({ items, onSubmit }: Props) => {
 
   return (
     <>
-      <form className="container sticky d-flex justify-content-between  mt-4">
+      <form className="container sticky d-flex justify-content-between align-items-center  mt-0">
         {navItems.map((navItem, index) => (
           <a
             key={navItem}

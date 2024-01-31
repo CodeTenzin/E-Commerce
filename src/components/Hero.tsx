@@ -7,7 +7,7 @@ interface Props {
 const Hero = ({ siteName }: Props) => {
   return (
     <>
-      <div className="container-fluid d-flex justify-content-between align-items-center hero mt-4">
+      <div className="container-fluid d-flex justify-content-between align-items-center hero mt-5">
         <img src={logo} alt="" />
         <h1 className="fw-bolder heading-large text-dark-emphasis site-name">
           {siteName}
