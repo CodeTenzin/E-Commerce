@@ -51,13 +51,15 @@ const Order = ({ goToId, onAdd }: Props) => {
   return (
     <>
       <div id={goToId} className="container text-center mt-5">
-        <h2>Order</h2>
-        <div className="row row-cols-3">
+        <h2 className="order">Order</h2>
+        <div className="row justify-content-center align-items-center row-cols-4">
           {images.map((image, index) => (
-            <span key={index} className="col mt-5">
-              <img className="menu-image" src={image} />
-              <p>{items[index]}</p>
-              <p>${prices[index]}</p>
+            <span key={index} className="order-items rounded col mx-3 mt-5 p-3">
+              <img className="menu-image mb-3" src={image} />
+              <p className="border border-secondary-subtle rounded-pill fw-medium">
+                {items[index]}
+              </p>
+              <p className="fw-lighter">${prices[index]}</p>
               {/* <button
                 className="btn btn-outline-primary px-4"
                 onClick={() => onAdd(index)}
