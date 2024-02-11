@@ -87,7 +87,7 @@ nav li {
   padding-top: 15px;
 }
 
-.hero-buttons {
+.btns-flexed {
   display: flex;
   align-items: center;
   padding: 15px 0;
@@ -95,7 +95,7 @@ nav li {
   gap: 25px;
 }
 
-.hero-icons {
+.icons-flexed {
   display: flex;
   align-items: center;
   gap: 15px;
