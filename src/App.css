@@ -21,7 +21,7 @@ nav {
   /* border: 1px solid red; */
 }
 
-.logo img {
+.logo-icon {
   width: 50px;
 }
 
@@ -30,26 +30,32 @@ nav li {
   padding: 0 1rem;
 }
 
-a {
-  color: black;
+.link {
   text-decoration: none;
+}
+
+.link-primary {
+  color: black;
   font-weight: 800;
 }
 
-a:hover {
+.link-primary:hover {
   color: var(--color-primary);
 }
 
-.btn-login {
-  background: var(--color-primary);
+.btn {
   outline: none;
-  /* box-shadow: none;  */
   border-radius: 5px;
   padding: 10px 15px;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  /* box-shadow: none;  */
   color: whitesmoke;
 }
 
-.btn-login:hover {
+.btn-primary:hover {
   color: black;
 }
 

@@ -2,25 +2,23 @@ import logo from "../assets/logo2.png";
 
 const Navigation2 = () => {
   return (
-    <nav className="container">
-      <div className="logo">
-        <img src={logo} alt="" className="logo-icon" />
-      </div>
+    <nav>
+      <img src={logo} alt="" className="logo-icon" />
       <ul>
-        <a href="">
+        <a href="" className="link link-primary">
           <li>Menu</li>
         </a>
-        <a href="">
+        <a href="" className="link link-primary">
           <li>Location</li>
         </a>{" "}
-        <a href="">
+        <a href="" className="link link-primary">
           <li>About</li>
         </a>{" "}
-        <a href="">
+        <a href="" className="link link-primary">
           <li>Contact</li>
         </a>
       </ul>
-      <button className="btn-login">Login</button>
+      <button className="btn btn-primary">Login</button>
     </nav>
   );
 };
