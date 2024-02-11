@@ -12,10 +12,15 @@ body {
   color: black;
 }
 
+.container {
+  padding: 0 45px;
+  margin-bottom: 45px;
+}
+
 /* Navigation */
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 0.5rem 0;
   /* border: 1px solid red; */
@@ -57,6 +62,47 @@ nav li {
 
 .btn-primary:hover {
   color: black;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+}
+
+.hero-text {
+  /* border: 1px solid red; */
+}
+
+.hero-heading {
+  margin: 0;
+  font-size: 6rem;
+  font-weight: bolder;
+  word-spacing: 7px;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  font-weight: 500;
+  max-width: 750px;
+  padding-top: 15px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  padding-left: 25px;
+  gap: 25px;
+}
+
+.hero-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hero-image {
+  /* border: 1px solid red; */
 }
 
 /* .heading-large {

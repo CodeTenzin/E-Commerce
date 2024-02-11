@@ -45,11 +45,13 @@ export default App;
 */
 
 import Navigation2 from "./components/Navigation2";
+import Hero2 from "./components/Hero2";
 
 const App = () => {
   return (
     <div>
       <Navigation2 />
+      <Hero2 />
     </div>
   );
 };

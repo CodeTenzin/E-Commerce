@@ -2,7 +2,7 @@ import logo from "../assets/logo2.png";
 
 const Navigation2 = () => {
   return (
-    <nav>
+    <nav className="container">
       <img src={logo} alt="" className="logo-icon" />
       <ul>
         <a href="" className="link link-primary">
