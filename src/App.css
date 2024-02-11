@@ -50,13 +50,20 @@ nav li {
 
 .btn {
   outline: none;
-  border-radius: 5px;
   padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: none;
 }
+
+/* 
+.btn:focus,
+.btn:active {
+  outline: none;
+} */
 
 .btn-primary {
   background: var(--color-primary);
-  /* box-shadow: none;  */
+  border-color: var(--color-primary);
   color: whitesmoke;
 }
 
