@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
 import Cart from "./components/Cart";
 
 // TODO: href link to id.
-
+/*
 function App() {
   const siteName = "Insomnia Cafe";
   const [items, setItems] = useState<number[]>([]);
@@ -27,14 +27,11 @@ function App() {
     console.log("Indexes", items);
   };
 
-  // Added
   const cart = useSelector((state: RootState) => state.navigation.cart);
 
   return (
     <>
-      {/* <div className="container"> */}
       <div className="container-fluid">
-        {/* <Navigation items={items} onSubmit={navSubmitHandler} /> */}
         <Navigation items={cart} onSubmit={navSubmitHandler} />
         <Hero siteName={siteName} />
         <Order goToId={goToId} onAdd={addToCartHandler} />
@@ -42,5 +39,19 @@ function App() {
     </>
   );
 }
+
+export default App;
+
+*/
+
+import Navigation2 from "./components/Navigation2";
+
+const App = () => {
+  return (
+    <div>
+      <Navigation2 />
+    </div>
+  );
+};
 
 export default App;
